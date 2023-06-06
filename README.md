@@ -1,6 +1,3 @@
-[]: # Project: MemeSense
-[]: # File: README.md
-
 # MemeSense: A Hateful Meme Detector
 
 MemeSense is a tool that can identify if a meme is hateful or not based on its text and image content.
