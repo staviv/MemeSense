@@ -13,4 +13,4 @@ The fusion model then merges the outputs of the two models and predicts the fina
 
 - [Aviv Shem-Tov](https://github.com/staviv)
 - [Tomer Keniagin](https://github.com/toto9820)
- 
+
