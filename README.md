@@ -1,3 +1,8 @@
+# MemeSense: A Hateful Meme Detector
+
+MemeSense is a tool that can identify if a meme is hateful or not based on its text and image content.
+
+
 
 # we need to update the link
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/taldatech/ee046202-unsupervised-learning-data-analysis) 
@@ -228,6 +233,14 @@ For future work, we would suggest:
     that, we would suggest doing fine-tuning instead of using pretrained
     models and training on more than just 100 train samples like we did
     just to show the concept.
+
+
+## Authors
+
+- [Aviv Shem-Tov](https://github.com/staviv)
+- [Tomer Keniagin](https://github.com/toto9820)
+
+
 
 # Bibliography
 
