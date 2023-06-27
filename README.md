@@ -1,14 +1,3 @@
-**<u>Deep Learning <span dir="rtl">046211</span></u>**
-
-**<u>Technion ECE DL Course</u>**
-
-**<u>MemeSense Project Report</u>**
-
-<u>Students:</u>
-
--   Tomer Keniagin – 206975930
-
--   Aviv Shem Tov – 205873987
 
 # we need to update the link
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/taldatech/ee046202-unsupervised-learning-data-analysis) 
@@ -18,33 +7,25 @@
 ## Running The Notebook
 
 # Contents
-[1. Background](#background)
+* [Background](#background)
+       * [Motivation](#motivation)
+       * [Previous work](#previous-work)
 
-    [1.1. Motivation](#motivation)
+* [Hateful Memes Dataset](#hateful-memes-dataset)
 
-    [1.2. Previous work](#previous-work)
+* [Starting point](#starting-point)
 
-[2. Hateful Memes Dataset](#hateful-memes-dataset)
+* [Modifications and Add-ons](#modifications-and-add-ons)
+       * [Kornia Augmentations](#kornia-augmentations)
+       * [Optuna](#optuna)
+       * [Trial and error with variety of pretrained models (Transfer Learning)](#trial-and-error-with-a-variety-of-pretrained-models-transfer-learning)
+       * [OCR](#ocr)
 
-[3. Starting point](#starting-point)
+* [Results and Comparisons](#results-and-comparisons)
 
-[4. Modifications and Add-ons](#modifications-and-add-ons)
+* [Summary](#summary)
 
-    [4.1. Kornia Augmentations](#kornia-augmentations)
-
-    [4.2. Optuna](#optuna)
-
-    [4.3. Using different Dropouts in every layer](#_Toc1826082944)
-
-    [4.4. Trial and error with a variety of pretrained models (Transfer Learning)](#trial-and-error-with-a-variety-of-pretrained-models-transfer-learning)
-
-    [4.5. OCR](#ocr)
-
-[5. Results and Comparisons](#results-and-comparisons)
-
-[6. Summary](#summary)
-
-[7. Bibliography](#bibliography)
+* [Bibliography](#bibliography)
 
 **TODO – insert table content for figures and tables with page
 numbers.**
