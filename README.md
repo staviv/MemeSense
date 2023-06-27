@@ -10,6 +10,13 @@
 
 -   Aviv Shem Tov – 205873987
 
+# we need to update the link
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/taldatech/ee046202-unsupervised-learning-data-analysis) 
+# we need to update
+* [Installation Instructions](#installation-instructions)
+    + [Libraries to Install](#libraries-to-install)
+## Running The Notebook
+
 # Contents
 [1. Background](#background)
 
