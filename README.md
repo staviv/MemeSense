@@ -12,40 +12,34 @@
 
 # Contents
 
-[1. Background [1](#background)](#background)
+[1. Background](#background)
 
-[1.1. Motivation [1](#motivation)](#motivation)
+[1.1. Motivation](#motivation)
 
-[1.2. Previous work [2](#previous-work)](#previous-work)
+[1.2. Previous work](#previous-work)
 
-[2. Hateful Memes Dataset
-[2](#hateful-memes-dataset)](#hateful-memes-dataset)
+[2. Hateful Memes Dataset](#hateful-memes-dataset)
 
-[3. Starting point [2](#starting-point)](#starting-point)
+[3. Starting point](#starting-point)
 
-[4. Modifications and Add-ons
-[3](#modifications-and-add-ons)](#modifications-and-add-ons)
+[4. Modifications and Add-ons](#modifications-and-add-ons)
 
-[4.1. Kornia Augmentations
-[3](#kornia-augmentations)](#kornia-augmentations)
+[4.1. Kornia Augmentations](#kornia-augmentations)
 
-[4.2. Optuna [3](#optuna)](#optuna)
+[4.2. Optuna](#optuna)
 
-[4.3. Using different Dropouts in every layer
-[3](#_Toc1826082944)](#_Toc1826082944)
+[4.3. Using different Dropouts in every layer](#_Toc1826082944)
 
-[4.4. Trial and error with verity of pretrained models (Transfer
-Learning)
-[3](#trial-and-error-with-a-variety-of-pretrained-models-transfer-learning)](#trial-and-error-with-a-variety-of-pretrained-models-transfer-learning)
+[4.4. Trial and error with a variety of pre-trained models (Transfer Learning)](#trial-and-error-with-a-variety-of-pretrained-models-transfer-learning)
 
-[4.5. OCR [3](#ocr)](#ocr)
+[4.5. OCR](#ocr)
 
-[5. Results and Comparisons
-[3](#results-and-comparisons)](#results-and-comparisons)
+[5. Results and Comparisons](#results-and-comparisons)
 
-[6. Summary [4](#summary)](#summary)
+[6. Summary](#summary)
 
-[7. Bibliography [4](#bibliography)](#bibliography)
+[7. Bibliography](#bibliography)
+
 
 **TODO – insert table content for figures and tables with page
 numbers.**
