@@ -11,12 +11,11 @@
 -   Aviv Shem Tov – 205873987
 
 # Contents
-
 [1. Background](#background)
 
-[1.1. Motivation](#motivation)
+    [1.1. Motivation](#motivation)
 
-[1.2. Previous work](#previous-work)
+    [1.2. Previous work](#previous-work)
 
 [2. Hateful Memes Dataset](#hateful-memes-dataset)
 
@@ -24,22 +23,21 @@
 
 [4. Modifications and Add-ons](#modifications-and-add-ons)
 
-[4.1. Kornia Augmentations](#kornia-augmentations)
+    [4.1. Kornia Augmentations](#kornia-augmentations)
 
-[4.2. Optuna](#optuna)
+    [4.2. Optuna](#optuna)
 
-[4.3. Using different Dropouts in every layer](#_Toc1826082944)
+    [4.3. Using different Dropouts in every layer](#_Toc1826082944)
 
-[4.4. Trial and error with a variety of pre-trained models (Transfer Learning)](#trial-and-error-with-a-variety-of-pretrained-models-transfer-learning)
+    [4.4. Trial and error with a variety of pretrained models (Transfer Learning)](#trial-and-error-with-a-variety-of-pretrained-models-transfer-learning)
 
-[4.5. OCR](#ocr)
+    [4.5. OCR](#ocr)
 
 [5. Results and Comparisons](#results-and-comparisons)
 
 [6. Summary](#summary)
 
 [7. Bibliography](#bibliography)
-
 
 **TODO – insert table content for figures and tables with page
 numbers.**
