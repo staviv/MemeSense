@@ -4,7 +4,7 @@ MemeSense is a tool that can identify if a meme is hateful or not based on its t
 
 
 
-[![Open In Colab](https://www.vectorlogo.zone/logos/kaggle/kaggle-ar21.svg)](https://www.kaggle.com/code/aviv360/memesense/)
+[![Open In Kaggle](https://www.vectorlogo.zone/logos/kaggle/kaggle-ar21.svg)](https://www.kaggle.com/code/aviv360/memesense/)
 
 # Contents
 * [Installation Instructions](#installation-instructions)
