@@ -4,8 +4,6 @@ MemeSense is a tool that can identify if a meme is hateful or not based on its t
 
 
 
-[![Open In Kaggle](https://www.vectorlogo.zone/logos/kaggle/kaggle-ar21.svg)](https://www.kaggle.com/code/aviv360/memesense/)
-
 # Contents
 * [Installation Instructions](#installation-instructions)
 * [Background](#background)
@@ -37,6 +35,9 @@ There are GPU and TPUs accelerators for use with different weekly hours each (20
 *	In the right side, in the Data section, choose “Add Data” and search for hatefulmemes by Jagjeet Sian.
 *	The last thing left is to run the notebook.
 In the top toolbar, click on Run -> Start Session and when you see a green indicator that Draft session is on, run a cell with Shift + Enter or choose in the top toolbar     Run -> Run all.
+
+
+[![Open In Kaggle](https://www.vectorlogo.zone/logos/kaggle/kaggle-ar21.svg)](https://www.kaggle.com/code/aviv360/memesense/)
 
 # Background
 
