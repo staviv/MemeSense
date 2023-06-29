@@ -203,8 +203,6 @@ Despite our efforts to implement almost everything we saw from the course lectur
 For future work, we would suggest:
 *	Hyperparameters tuning with Optuna to find the best hyperparameters for each model architecture and not just choosing one type of model like we did (time limit).
 *	Report the loss value to Optuna for every few batches instead of each full epoch to get earlier pruning and make the hyperparameter search much faster.
-*	Finetune the embedding layers.
-*	Checking manually the most critical errors on the validation (where the output of the softmax is farthest  from the actual label)
 *	Integrating OCR into our model to extract text from a meme. Before that, we would suggest doing fine-tuning instead of using pretrained models and training on more than just 100 train samples like we did just to show the concept.
 
 
