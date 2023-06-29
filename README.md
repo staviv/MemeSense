@@ -196,11 +196,11 @@ From our modifications and Adds-Ons, we found that data augmentations
 improve our model by number% In accuracy and number% in AUC-ROC.
 
 Multimodal pretraining with CLIP model performed better than Unimodal
-pretraining with an image and text pretrained models with an improvement
+pretraining with image and text pretrained models with an improvement
 of num% in accuracy and num% in AUC-ROC.
 
 Dropout for image and text separately was preferred by Optuna rather
-than a single value like in the starting point architecture.
+then a single value like in the starting point architecture.
 
 Learning rate with scheduler worked the best with ReducOnPlatue and LR
 Warmup to increase the learning rate at the beginning caused
@@ -216,22 +216,14 @@ than the others.
 
 # Summary
 
-Despite our efforts to implement almost everything we saw from the
-course lecture, the limited resources we had and the size of the models
-we dealt with challenged us to think out of the box not just in terms of
-performance, but computation time and memory consumption. It led us to
-do tradeoffs which were valuable lesson for us.
-
+Despite our efforts to implement almost everything we saw from the course lecture, the limited resources we had and the size of the models we dealt with challenged us to think out of the box not just in terms of performance, but computation time and memory consumption. It led us to do tradeoffs which were valuable lessons for us.
 For future work, we would suggest:
+*	Hyperparameters tuning with Optuna to find the best hyperparameters for each model architecture and not just choosing one type of model like we did (time limit).
+*	Report the loss value to Optuna for every few batches instead of each full epoch to get earlier pruning and make the hyperparameter search much faster.
+*	Finetune the embedding layers.
+*	Checking manually the most critical errors on the validation (where the output of the softmax is farthest  from the actual label)
+*	Integrating OCR into our model to extract text from a meme. Before that, we would suggest doing fine-tuning instead of using pretrained models and training on more than just 100 train samples like we did just to show the concept.
 
--   Hyperparameters tuning with Optuna to find the best hyperparameters
-    for each model architecture and not just choosing one type of model
-    like we did (time limit).
-
--   Integrating OCR into our model to extract text from a meme. Before
-    that, we would suggest doing fine-tuning instead of using pretrained
-    models and training on more than just 100 train samples like we did
-    just to show the concept.
 
 
 ## Authors
