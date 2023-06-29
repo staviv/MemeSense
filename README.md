@@ -9,8 +9,8 @@ MemeSense is a tool that can identify if a meme is hateful or not based on its t
 # Contents
 * [Installation Instructions](#installation-instructions)
 * [Background](#background)
-       * [Motivation](#motivation)
-       * [Previous work](#previous-work)
+  * [Motivation](#motivation)
+  * [Previous work](#previous-work)
 
 * [Hateful Memes Dataset](#hateful-memes-dataset)
 
