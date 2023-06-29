@@ -116,7 +116,7 @@ then concatenated and passed through a linear fully connected layer that
 produces the final output, the class. The model is trained using
 cross-entropy loss and optimized using an AdamW optimizer.
 
-<img src="media/image2.png" style="width:5.31307in;height:4.14091in" alt="A picture containing text, screenshot, font, line Description automatically generated" />
+<img src="media/model_architecture.png" style="width:5.31307in;height:4.14091in" alt="model architecture" />
 
 # Modifications and Add-ons
 
