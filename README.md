@@ -17,10 +17,10 @@ MemeSense is a tool that can identify if a meme is hateful or not based on its t
 * [Starting point](#starting-point)
 
 * [Modifications and Add-ons](#modifications-and-add-ons)
-       * [Kornia Augmentations](#kornia-augmentations)
-       * [Optuna](#optuna)
-       * [Trial and error with variety of pretrained models (Transfer Learning)](#trial-and-error-with-a-variety-of-pretrained-models-transfer-learning)
-       * [OCR](#ocr)
+  * [Kornia Augmentations](#kornia-augmentations)
+  * [Optuna](#optuna)
+  * [Trial and error with variety of pretrained models (Transfer Learning)](#trial-and-error-with-a-variety-of-pretrained-models-transfer-learning)
+  * [OCR](#ocr)
 
 * [Results and Comparisons](#results-and-comparisons)
 
