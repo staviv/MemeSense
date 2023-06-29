@@ -4,12 +4,19 @@ MemeSense is a tool that can identify if a meme is hateful or not based on its t
 
 
 
-# we need to update the link
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/taldatech/ee046202-unsupervised-learning-data-analysis) 
+[![Open In Colab](https://www.vectorlogo.zone/logos/kaggle/kaggle-ar21.svg)](https://www.kaggle.com/code/aviv360/memesense/)
 # we need to update
 * [Installation Instructions](#installation-instructions)
     + [Libraries to Install](#libraries-to-install)
-## Running The Notebook
+# Installation Instructions 
+*	Register to Kaggle if you haven't already.
+*	Open an empty notebook.
+*	In order to get access to accelerators – enter your phone number. 
+There are GPU and TPUs accelerators for use with different weekly hours each (20 – 30 hours). Choose one of them.
+*	In the top toolbar, click on File -> Import Notebook and choose from File if the memesense.ipynb is saved local at your computer, or directly from this GitHub Repo.
+*	In the right side, in the Data section, choose “Add Data” and search for hatefulmemes by Jagjeet Sian.
+*	The last thing left is to run the notebook.
+In the top toolbar, click on Run -> Start Session and when you see a green indicator that Draft session is on, run a cell with Shift + Enter or choose in the top toolbar     Run -> Run all.
 
 # Contents
 * [Background](#background)
