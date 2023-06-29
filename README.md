@@ -42,31 +42,13 @@ In the top toolbar, click on Run -> Start Session and when you see a green indic
 
 ## Motivation
 
-Memes are a common way of expressing opinions and emotions on social
-media, using images and texts together to create funny or ironic
-messages. However, some memes are not meant to entertain, but to offend.
-These are hateful memes, which use images and texts to spread hate
-against specific groups of people based on their religion, gender,
-color, etc.
+Memes are a common way of expressing opinions and emotions on social media, using images and texts together to create funny or ironic messages. However, some memes are not meant to entertain but to offend. These are hateful memes, which use images and texts to spread hate against specific groups of people based on their religion, gender, color, etc. 
 
-Hateful memes can have serious consequences for the victims of hate
-speech, such as mental harm, social exclusion, or fear of violence. They
-can also affect the attitudes and actions of other users who see them,
-possibly increasing intolerance and radicalization.
+Hateful memes can have serious consequences for the victims of hate speech, such as mental harm, social exclusion, or fear of violence. They can also affect the attitudes and actions of other users who see them, possibly increasing intolerance and radicalization. 
 
-To prevent hateful memes from harming individuals and society, it is
-essential to develop effective solutions to detect them.
+To prevent hateful memes from harming individuals and society, it is essential to develop effective solutions to detect them.  
 
-Detecting hateful memes is a difficult task because it requires
-understanding the complex and subtle interactions between the visual and
-textual components of the meme. For example, a meme might use an
-innocent image with a sarcastic caption to mock a certain group. Or a
-meme might use an image of a desert or an empty space, with a caption
-that says: “Look how many people love you” or something similar. This
-means that a meme that may seem harmless on its image and its text
-separately may be harmful when they are combined. For example, if the
-text is “Look how many people love you” and the image is a crowd of
-cheering fans, the meme isn’t harmful.
+Detecting hateful memes is a difficult task because it requires understanding the complex and subtle interactions between the visual and textual components of the meme.                           For example, a meme might use an innocent image with a sarcastic caption to mock a certain group or might use an image of a desert or an empty space, with a caption that says: “Look how many people love you” or something similar. This means that a meme that may seem harmless on its image and its text separately may be harmful when they are combined. For example, if the text is “Look how many people love you” and the image is a crowd of cheering fans, the meme isn’t harmful. 
 
 ## Previous work
 
