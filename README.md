@@ -17,7 +17,7 @@ MemeSense is a tool that can identify if a meme is hateful or not based on its t
 * [Modifications and Add-ons](#modifications-and-add-ons)
   * [Kornia Augmentations](#kornia-augmentations)
   * [Optuna](#optuna)
-  * [Trial and error with variety of pretrained models (Transfer Learning)](#trial-and-error-with-a-variety-of-pretrained-models-transfer-learning)
+  * [Trial and error with a variety of pretrained models (Transfer Learning)](#trial-and-error-with-a-variety-of-pretrained-models-transfer-learning)
   * [OCR](#ocr)
 
 * [Results and Comparisons](#results-and-comparisons)
@@ -28,16 +28,14 @@ MemeSense is a tool that can identify if a meme is hateful or not based on its t
 
 # Installation Instructions 
 *	Register to Kaggle if you haven't already.
-*	Open an empty notebook.
-*	In order to get access to accelerators – enter your phone number. 
-There are GPU and TPUs accelerators for use with different weekly hours each (20 – 30 hours). Choose one of them.
-*	In the top toolbar, click on File -> Import Notebook and choose from File if the memesense.ipynb is saved local at your computer, or directly from this GitHub Repo.
-*	In the right side, in the Data section, choose “Add Data” and search for hatefulmemes by Jagjeet Sian.
-*	The last thing left is to run the notebook.
-In the top toolbar, click on Run -> Start Session and when you see a green indicator that Draft session is on, run a cell with Shift + Enter or choose in the top toolbar     Run -> Run all.
-
+*	Open our notebook.
 
 [![Open In Kaggle](https://www.vectorlogo.zone/logos/kaggle/kaggle-ar21.svg)](https://www.kaggle.com/code/aviv360/memesense/)
+*	In order to get access to accelerators – enter your phone number. 
+There are GPU and TPUs accelerators for use with different weekly hours each (20 – 30 hours). Choose one of them.
+*	The last thing left is to run the notebook.
+In the top toolbar, click on Run -> Start Session and when you see a green indicator that the Draft session is on, run a cell with Shift + Enter or choose in the top toolbar     Run -> Run all.
+
 
 # Background
 
@@ -109,56 +107,58 @@ These include:
 
 ## Kornia Augmentations
 
-> We applied various image transformations using Kornia, a library that
-> provides differentiable computer vision operations for PyTorch using
-> the GPU. These transformations include random cropping, resizing,
-> rotation, horizontal flipping, color jittering, and adding Gaussian
-> noise with small variance. The purpose of these augmentations is to
-> increase the diversity of the image data and prevent overfitting<span
-> dir="rtl">.</span>
+We applied various image transformations using Kornia, a library that
+provides differentiable computer vision operations for PyTorch using
+the GPU. These transformations include random cropping, resizing,
+rotation, horizontal flipping, color jittering, and adding Gaussian
+noise with small variance. The purpose of these augmentations is to
+increase the diversity of the image data and prevent overfitting<span
+dir="rtl">.</span>
 
 ## Optuna
 
-> We used Optuna, a library that automates hyperparameter searching to
-> find the best values for hyperparameters such as: learning rate,
-> dropout value for each layer separately, and the parameters of each
-> augmentation we used.
->
-> We defined the objective function as the validation error (zero – one
-> loss) of the model given a set of hyperparameters and used Optuna to
-> search for the optimal combination using a tree structured Parzen
-> estimator (TPE) algorithm.
->
-> We used Optuna’s pruning feature to speed up the optimization process.
-> Pruning allows the study object to stop unpromising trials based on
-> the validation error reported every epoch. This resulted in a
-> significant reduction in the computation time.
+We used Optuna, a library that automates hyperparameter searching to
+find the best values for hyperparameters such as: learning rate,
+dropout value for each layer separately, and the parameters of each
+augmentation we used.
+
+We defined the objective function as the validation error (zero – one
+loss) of the model given a set of hyperparameters and used Optuna to
+search for the optimal combination using a tree structured Parzen
+estimator (TPE) algorithm.
+
+We used Optuna’s pruning feature to speed up the optimization process.
+Pruning allows the study object to stop unpromising trials based on
+the validation error reported every epoch. This resulted in a
+significant reduction in the computation time.
+
+
 
 ## Trial and error with a variety of pretrained models (Transfer Learning) 
 
-> We experimented with different architectures and pretrained models for
-> both image and text feature extraction. For example, we tried using
-> BERT, RoBERTa, DistilBERT, and CLIPtext for text embedding, and we
-> tried using Resnet152, DenseNet121, EfficientNet ‘b5’, and CLIPvision
-> for image embedding. We compared their performance on the validation
-> set and selected the best one, CLIP.
+We experimented with different architectures and pretrained models for
+both image and text feature extraction. For example, we tried using
+BERT, RoBERTa, DistilBERT, and CLIPtext for text embedding, and we
+tried using Resnet152, DenseNet121, EfficientNet ‘b5’, and CLIPvision
+for image embedding. We compared their performance on the validation
+set and selected the best one, CLIP.
 
 ## CLIP (Contrastive Language–Image Pre-training)
 
-> The CLIP model from OpenAI contains a text embedding model and an
-> image embedding model. CLIP pre-trained on a large-scale dataset of
-> images and captions together, so it has an understanding of both texts
-> and images. Each embedding model outputs a 512-dimensional vector.
+The CLIP model from OpenAI contains a text embedding model and an
+image embedding model. CLIP pre-trained on a large-scale dataset of
+images and captions together, so it has an understanding of both texts
+and images. Each embedding model outputs a 512-dimensional vector.
 
 ## OCR
 
-> Our model architecture is useless when we don’t get our meme separated
-> to its image and text parts. Moreover, in real life, we can’t expect
-> our memes to come in this way due to the massive number of memes.
->
-> As a result, we investigated OCR (Optical Character Recognition)
-> models in order to extract the text from the memes. We focused only on
-> pretrained models and found 3 models to test with:
+Our model architecture is useless when we don’t get our meme separated
+into its image and text parts. Moreover, in real life, we can’t expect
+our memes to come in this way due to the massive number of memes.
+
+As a result, we investigated OCR (Optical Character Recognition)
+models in order to extract the text from the memes. We focused only on
+pretrained models and found 3 models to test with:
 
 -   Pytesseract
 
@@ -166,12 +166,12 @@ These include:
 
 -   docTR (Document Text Recognition)
 
-> Later, we had to define metric to check which model gives us the most
-> similar results to the original text of the meme. We chose cosine
-> similarity but came to another problem how to convert texts to vectors
-> to calculate cosine similarity. We solved it with TF-IDF vectors
-> conversion and calculated average cosine similarity on 100 samples
-> from train set.
+Later, we had to define metric to check which model gives us the most
+similar results to the original text of the meme. We chose cosine
+similarity but came to another problem how to convert texts to vectors
+to calculate cosine similarity. We solved it with TF-IDF vectors
+conversion and calculated average cosine similarity on 100 samples
+from the train set.
 
 # Results and Comparisons 
 
