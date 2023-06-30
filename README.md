@@ -63,16 +63,16 @@ was designed specifically to help AI researchers develop new systems
 that can understand the content and detect multimodal hate speech.
 
 Each sample in the dataset is composed of a meme image with a label
-where ‘0’ indicates non – hateful meme while ‘1’ indicates hateful meme.
+where ‘0’ indicates non – a hateful meme while ‘1’ indicates a hateful meme.
 
 In practice (in code), the dataset is imported as JSON Lines files where
 each file contains lines of id, image file name, its associated text and
 label.
 
 The Hateful Memes Dataset consists of three parts: a train set, a
-validation set and a test set. The train set contains 8,500 samples with
+validation set, and a test set. The train set contains 8,500 samples with
 class imbalance – less hateful memes; the validation set contains 500
-samples, and the test set contains 1,000 samples – both sets with
+samples and the test set contains 1,000 samples – both sets with
 neglectable class imbalance. The Hateful Memes Dataset is available for
 download from Facebook AI’s website, from “Papers With Code”, or from
 Kaggle
@@ -135,7 +135,6 @@ significant reduction in the computation time.
 
 <img src="media/optuna visualisations/Optimization_history.png" style="width:6.26806in;height:4.37361in" alt="A screenshot of a computer Description automatically generated with low confidence" />
 
-<img src="media/optuna visualisations/Parallel cordinate.png" style="width:6.26806in;height:4.37361in" alt="A screenshot of a computer Description automatically generated with low confidence" />
 
 <img src="media/optuna visualisations/lr.png" style="width:6.26806in;height:4.37361in" alt="A screenshot of a computer Description automatically generated with low confidence" />
 
@@ -172,7 +171,7 @@ pretrained models and found 3 models to test with:
 
 -   docTR (Document Text Recognition)
 
-Later, we had to define metric to check which model gives us the most
+Later, we had to define metrics to check which model gives us the most
 similar results to the original text of the meme. We chose cosine
 similarity but came to another problem how to convert texts to vectors
 to calculate cosine similarity. We solved it with TF-IDF vectors
@@ -180,26 +179,32 @@ conversion and calculated average cosine similarity on 100 samples
 from the train set.
 
 # Results and Comparisons 
+**Our model score:**
 
-From our modifications and Adds-Ons, we found that data augmentations
-improve our model by number% In accuracy and number% in AUC-ROC.
+AUC-ROC Score: 0.72068
 
-Multimodal pretraining with CLIP model performed better than Unimodal
-pretraining with image and text pretrained models with an improvement
-of num% in accuracy and num% in AUC-ROC.
+Accuracy: 0.664
 
-Dropout for image and text separately was preferred by Optuna rather
-then a single value like in the starting point architecture.
 
-Learning rate with scheduler worked the best with ReducOnPlatue and LR
-Warmup to increase the learning rate at the beginning caused
-underfitting.
 
-Besides AdamW optimizer, we tried SGD + momentum = 0.9 + Nesterov but
-our train loss couldn’t converge so we stayed with AdamW.
 
-In our OCR experiment, we got much better results in Easyocr & OpenCV
-than the others.
+From our modifications and Adds-Ons, we found that data augmentations didn’t improve our model.
+
+Our model achieved an improvement of 13% in accuracy compared to the starting point.
+
+Multimodal pretraining with CLIP model performed better than Unimodal pretraining with image and text pretrained and even better than the multimodal pretrained ViLBert.
+
+Dropout for image and text separately was preferred by Optuna rather than a single value like in the starting point architecture.
+
+The learning rate with the scheduler worked the best with ReducOnPlatue.
+
+Trying LR Warmup to increase the learning rate at the beginning caused underfitting.
+
+Besides AdamW optimizer, we tried SGD + momentum = 0.9 + Nesterov but our train loss couldn’t converge so we stayed with AdamW.
+
+In our OCR experiment, we got much better results in Easyocr & OpenCV than the others.
+
+
 
 <img src="media/acc_original_code_table.png" style="width:6.26806in;height:4.37361in" alt="A screenshot of a computer Description automatically generated with low confidence" />
 
