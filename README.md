@@ -112,19 +112,18 @@ provides differentiable computer vision operations for PyTorch using
 the GPU. These transformations include random cropping, resizing,
 rotation, horizontal flipping, color jittering, and adding Gaussian
 noise with small variance. The purpose of these augmentations is to
-increase the diversity of the image data and prevent overfitting<span
-dir="rtl">.</span>
+increase the diversity of the image data and prevent overfitting
 
 ## Optuna
 
 We used Optuna, a library that automates hyperparameter searching to
-find the best values for hyperparameters such as: learning rate,
+find the best values for hyperparameters such as learning rate,
 dropout value for each layer separately, and the parameters of each
 augmentation we used.
 
 We defined the objective function as the validation error (zero – one
 loss) of the model given a set of hyperparameters and used Optuna to
-search for the optimal combination using a tree structured Parzen
+search for the optimal combination using a tree-structured Parzen
 estimator (TPE) algorithm.
 
 We used Optuna’s pruning feature to speed up the optimization process.
@@ -132,6 +131,13 @@ Pruning allows the study object to stop unpromising trials based on
 the validation error reported every epoch. This resulted in a
 significant reduction in the computation time.
 
+<img src="media/optuna visualisations/Intermediate_value.png" style="width:6.26806in;height:4.37361in" alt="A screenshot of a computer Description automatically generated with low confidence" />
+
+<img src="media/optuna visualisations/Optimization_history.png" style="width:6.26806in;height:4.37361in" alt="A screenshot of a computer Description automatically generated with low confidence" />
+
+<img src="media/optuna visualisations/Parallel cordinate.png" style="width:6.26806in;height:4.37361in" alt="A screenshot of a computer Description automatically generated with low confidence" />
+
+<img src="media/optuna visualisations/lr.png" style="width:6.26806in;height:4.37361in" alt="A screenshot of a computer Description automatically generated with low confidence" />
 
 
 ## Trial and error with a variety of pretrained models (Transfer Learning) 
@@ -195,7 +201,7 @@ our train loss couldn’t converge so we stayed with AdamW.
 In our OCR experiment, we got much better results in Easyocr & OpenCV
 than the others.
 
-<img src="media/image3.png" style="width:6.26806in;height:4.37361in" alt="A screenshot of a computer Description automatically generated with low confidence" />
+<img src="media/acc_original_code_table.png" style="width:6.26806in;height:4.37361in" alt="A screenshot of a computer Description automatically generated with low confidence" />
 
 # Summary
 
