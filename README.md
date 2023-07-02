@@ -136,8 +136,6 @@ significant reduction in the computation time.
 <img src="media/optuna visualisations/Optimization_history.png" style="width:6.26806in;height:4.37361in" alt="A screenshot of a computer Description automatically generated with low confidence" />
 
 
-<img src="media/optuna visualisations/lr.png" style="width:6.26806in;height:4.37361in" alt="A screenshot of a computer Description automatically generated with low confidence" />
-
 
 ## Trial and error with a variety of pretrained models (Transfer Learning) 
 
@@ -204,18 +202,19 @@ Besides AdamW optimizer, we tried SGD + momentum = 0.9 + Nesterov but our train 
 
 In our OCR experiment, we got much better results in Easyocr & OpenCV than the others.
 
+![image](https://github.com/staviv/MemeSense/assets/88351363/ca510ffb-3217-4a40-8e1d-5c913d5ba02f)
 
-
-<img src="media/acc_original_code_table.png" style="width:6.26806in;height:4.37361in" alt="A screenshot of a computer Description automatically generated with low confidence" />
 
 # Summary
 
 Despite our efforts to implement almost everything we saw from the course lecture, the limited resources we had and the size of the models we dealt with challenged us to think out of the box not just in terms of performance, but computation time and memory consumption. It led us to do tradeoffs which were valuable lessons for us.
-For future work, we would suggest:
+
+**For future work, we would suggest:**
 *	Hyperparameters tuning with Optuna to find the best hyperparameters for each model architecture and not just choosing one type of model like we did (time limit).
 *	Report the loss value to Optuna for every few batches instead of each full epoch to get earlier pruning and make the hyperparameter search much faster.
 *	Integrating OCR into our model to extract text from a meme. Before that, we would suggest doing fine-tuning instead of using pretrained models and training on more than just 100 train samples like we did just to show the concept.
 
+![image](https://github.com/staviv/MemeSense/assets/88351363/3e817aec-099b-4334-9445-0246c00145ea)
 
 
 ## Authors
