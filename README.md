@@ -30,7 +30,7 @@ MemeSense is a tool that can identify if a meme is hateful or not based on its t
 *	Register to Kaggle if you haven't already.
 *	Open our notebook.
 
-[![Open In Kaggle](https://www.vectorlogo.zone/logos/kaggle/kaggle-ar21.svg)](https://www.kaggle.com/code/aviv360/memesense/)
+[![Open In Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/code/aviv360/memesense/)
 *	In order to get access to accelerators – enter your phone number. 
 There are GPU and TPUs accelerators for use with different weekly hours each (20 – 30 hours). Choose one of them.
 *	The last thing left is to run the notebook.
