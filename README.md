@@ -131,7 +131,7 @@ Pruning allows the study object to stop unpromising trials based on
 the validation error reported every epoch. This resulted in a
 significant reduction in the computation time.
 
-![Intermediate value, most of the trials are pruned after the first epoch](media/optuna visualisations/Intermediate_value.png)
+![Intermediate value, most of the trials are pruned after the first epoch](/media/optuna_visualisations/Intermediate_value.png)
 
 
 
