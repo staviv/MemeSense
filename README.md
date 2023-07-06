@@ -131,9 +131,7 @@ Pruning allows the study object to stop unpromising trials based on
 the validation error reported every epoch. This resulted in a
 significant reduction in the computation time.
 
-<img src="media/optuna visualisations/Intermediate_value.png" style="width:6.26806in;height:4.37361in" alt="A screenshot of a computer Description automatically generated with low confidence" />
-
-<img src="media/optuna visualisations/Optimization_history.png" style="width:6.26806in;height:4.37361in" alt="A screenshot of a computer Description automatically generated with low confidence" />
+![Intermediate value, most of the trials are pruned after the first epoch](media/optuna visualisations/Intermediate_value.png)
 
 
 
@@ -185,7 +183,6 @@ Accuracy: 0.664
 
 
 
-
 From our modifications and Adds-Ons, we found that data augmentations didn’t improve our model.
 
 Our model achieved an improvement of 13% in accuracy compared to the starting point.
@@ -202,7 +199,6 @@ Besides AdamW optimizer, we tried SGD + momentum = 0.9 + Nesterov but our train 
 
 In our OCR experiment, we got much better results in Easyocr & OpenCV than the others.
 
-![image](https://github.com/staviv/MemeSense/assets/88351363/ca510ffb-3217-4a40-8e1d-5c913d5ba02f)
 
 
 # Summary
@@ -210,7 +206,7 @@ In our OCR experiment, we got much better results in Easyocr & OpenCV than the o
 Despite our efforts to implement almost everything we saw from the course lecture, the limited resources we had and the size of the models we dealt with challenged us to think out of the box not just in terms of performance, but computation time and memory consumption. It led us to do tradeoffs which were valuable lessons for us.
 
 
-![result comparation table](https://github.com/staviv/MemeSense/media/acc_table.png)
+![result comparation table](/media/acc_table.png)
 
 
 
