@@ -209,12 +209,16 @@ In our OCR experiment, we got much better results in Easyocr & OpenCV than the o
 
 Despite our efforts to implement almost everything we saw from the course lecture, the limited resources we had and the size of the models we dealt with challenged us to think out of the box not just in terms of performance, but computation time and memory consumption. It led us to do tradeoffs which were valuable lessons for us.
 
+
+![result comparation table](https://github.com/staviv/MemeSense/media/acc_table.png)
+
+
+
 **For future work, we would suggest:**
 *	Hyperparameters tuning with Optuna to find the best hyperparameters for each model architecture and not just choosing one type of model like we did (time limit).
 *	Report the loss value to Optuna for every few batches instead of each full epoch to get earlier pruning and make the hyperparameter search much faster.
 *	Integrating OCR into our model to extract text from a meme. Before that, we would suggest doing fine-tuning instead of using pretrained models and training on more than just 100 train samples like we did just to show the concept.
 
-![image](https://github.com/staviv/MemeSense/assets/88351363/3e817aec-099b-4334-9445-0246c00145ea)
 
 
 ## Authors
